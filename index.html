@@ -21,7 +21,7 @@
 	  $(document).ready(
 	  	function(){
 			// Add item to the list when clicking Add button 
-			$('button').click(
+			$('#button').click(
 				function(){
 					var input = $('#input').val();
 					var error = null;
@@ -49,9 +49,12 @@
 <div id="myDIV" class="header">
 	
 	<h1>Simple To Do List</h1>
-		
+	
+	<form target="frame">
 	<input type="text" id="input" name="list" onfocus="this.value=''" placeholder="What to do...">
-		<button id="button">Add</button>
+	<iframe width="0" height="0" border="0" name="frame" id="frame"></iframe>
+	<button type="submit" id="button" value="Add">Add</button>
+	</form>
 	</div>
 	<ul>
 	  
